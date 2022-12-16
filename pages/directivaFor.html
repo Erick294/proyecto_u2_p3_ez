@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Directiva For</title>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <div id="myApp2">
+            {{frases}}
+            <!--<ul>
+                <li>{{frases[0].texto}}</li>
+                <li>{{frases[1].texto}}</li>
+                <li>{{frases[2].texto}}</li>
+                <li>{{frases[3].texto}}</li>
+                <li>{{frases[4].texto}}</li>
+            </ul>-->
+
+            <ul>
+                <li v-for="item in frases">
+                    {{"Frase: "+item.texto +" "+ " Autor: "+item.autor}}</li>
+                
+            </ul>
+        </div>
+    </section>
+    <footer></footer>
+    
+    <script src="../js/configuracion2.js"></script>
+</body>
+</html>
