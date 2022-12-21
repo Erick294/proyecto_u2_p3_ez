@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="../css/estudiante.css">
+    <title>Lista Estudiantes</title>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <div id="myApp">
+            <h2>Ingreso de estudiantes:</h2>
+
+            <label for="nombre_estudiante">Nombre:</label>
+            <input id="nombre_estudiante" type="text">
+
+            <label for="apellido_estudiante">Apellido:</label>
+            <input id="apellido_estudiante" type="text">
+
+            <label for="direccion_estudiante">Dirección:</label>
+            <input id="direccion_estudiante" type="text">
+
+            <ul>
+                <li v-for="{nombre, apellido, direccion} in lista">
+                    <h3>{{nombre}} - {{apellido}} - {{direccion}}</h3>     
+                </li>
+            </ul>
+
+            <button v-on:click="agregarEstudiante">Agregar estudiante</button>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="../js/estudiante.js"></script>
+</body>
+</html>
