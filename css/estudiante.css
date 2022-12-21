@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    background-color: #fefae0;
+}
+
+#myApp{
+    display: grid;
+}
+
+label{
+    margin: 5px;
+}
+
+li{
+    list-style: none;
+}
+
+input{
+    margin: 5px;
+    width: fit-content;
+    margin-left: 450px;
+}
+
+button{
+    width: fit-content;
+    margin-left: 480px; 
+}
